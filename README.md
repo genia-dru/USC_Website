@@ -1,1 +1,1 @@
-# USC_Website
+# USC Website for Ukrainian Academics and Students

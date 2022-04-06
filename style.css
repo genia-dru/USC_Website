@@ -1,6 +1,39 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
+header {
+  position: relative;
+  display: block;
 }
+.site-header {
+  margin: -1rem -50vw;
+  left: 50%;
+  right: 50%;
+  background: #900;
+  width: 100vw;
+  height: 70px;
+}
+.logo {
+  position: absolute;
+  float: right;
+  top: 25%;
+  right: 1%;
+  height: 40px;
+  width: auto;
+}
+
+
+
+body {
+  background: #fcfcfa;
+  color: #000;
+  font-family: "National", Helvetica, arial, sans-serif;
+  display: block;
+}
+
+.website-info {
+  text-align: center;
+  padding-top: 10px;
+}
+
+
 table {
   border-collapse: collapse;
   width: 100%;

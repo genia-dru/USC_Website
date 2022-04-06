@@ -16,13 +16,13 @@ const rows = [
   createData('Marshall', 'funding, lab'),
 ];
 
-export default function BasicTable() {
+export default function dataTable() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
           
         <TableHead>
-          <TableRow>
+          <TableRow class="table-heading">
             <TableCell align="left">School/Department</TableCell>
             <TableCell align="left">Resources Available</TableCell>
           </TableRow>

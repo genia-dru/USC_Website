@@ -1,5 +1,33 @@
+header {
+  position: relative;
+  display: block;
+}
+.site-header {
+  margin: -1rem -50vw;
+  left: 50%;
+  right: 50%;
+  background: #900;
+  width: 100vw;
+  height: 70px;
+}
+.logo {
+  position: absolute;
+  float: right;
+  top: 25%;
+  right: 1%;
+  height: 40px;
+  width: auto;
+}
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background: #fcfcfa;
+  color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: block;
+}
+.website-info {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  padding-top: 10px;
 }
 table {
   border-collapse: collapse;
@@ -8,4 +36,25 @@ table {
 table, th, td {
   border: 1px solid;
   text-align: left;
+}
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -.24px;
+  text-align: middle;
+}
+h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: normal;
+  text-align: middle;
+}
+p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: normal;
+  text-align: middle;
 }

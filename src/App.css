@@ -1,0 +1,78 @@
+html {
+  font-size: 1rem;
+  height: 100%;
+  font-family: "National", Helvetica, arial, sans-serif;
+}
+
+@media only screen and (min-width : 0px) {
+  html {
+    font-size: 1rem;
+  }
+  .heading-title{
+    min-height: 40vh;
+  }
+}
+@media only screen and (min-width : 768px) {
+  html {
+    font-size: 1.2rem;
+  }
+  .heading-title{
+    min-height: 60vh;
+  }
+}
+@media only screen and (min-width : 992px) {
+  html {
+    font-size: 1.4rem;
+  }
+  .heading-title{
+    min-height: 60vh;
+  }
+}
+
+
+.App-header{
+  position: relative;
+  margin: -1rem -50vw;
+  background: #900;
+  width: 100vw;
+  height: 75px;
+}
+
+.logo {
+  position: absolute;
+  float: right;
+  top: 25px;
+  right: 2%;
+  height: 40px;
+  width: auto;
+}
+.logo-mobile {
+  position: absolute;
+  float: right;
+  top: 25px;
+  right: 2%;
+  height: 40px;
+  width: auto;
+}
+
+
+h3{
+   line-height: 1.3em;
+   letter-spacing: 0.2m;
+   text-align: center;
+}
+.heading-title{
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('background-usc.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(238, 199, 44);
+}
+.heading-title p{
+  color: rgb(187, 162, 63);
+  text-align: center;
+}

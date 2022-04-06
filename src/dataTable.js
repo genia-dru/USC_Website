@@ -5,9 +5,6 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import TableFooter from '@mui/material/TableFooter';
-import TablePagination from '@mui/material/TablePagination';
-import TablePaginationActions from '@mui/material/TablePagination/TablePaginationActions';
 import Paper from '@mui/material/Paper';
 
 function createData(name, resources) {
@@ -19,14 +16,13 @@ const rows = [
   createData('Marshall', 'funding, lab'),
 ];
 
-
-export default function BasicTable() {
+export default function dataTable() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
           
         <TableHead>
-          <TableRow>
+          <TableRow class="table-heading">
             <TableCell align="left">School/Department</TableCell>
             <TableCell align="left">Resources Available</TableCell>
           </TableRow>

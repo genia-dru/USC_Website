@@ -1,9 +1,9 @@
 import logo from './usc-logo.png';
-import logo_mobile from './usc-logo-mobile.png'
+import logo_mobile from './usc-logo-mobile.png';
 import './App.css';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
-import BasicTable from './dataTable.js';
+import DataTable from './dataTable.js';
 
 
 const options = [
@@ -17,8 +17,8 @@ function App() {
 
       <header className="App-header container-fluid">      
       <div class="logo-wrapper static-top pt-0 pb-0">
-            <img src={logo_mobile} class="logo-mobile d-sm-none"/>
-            <img src={logo} class="logo d-none d-sm-block"/>     
+            <img src={logo_mobile} class="logo-mobile d-sm-none justify-content-right"/>
+            <img src={logo} class="logo d-none d-sm-block justify-content-right"/>     
       </div>
       </header>
     
@@ -37,23 +37,26 @@ function App() {
           for the available opportunities in each USC school. Please contact <a href="email@usc.edu">email@usc.edu</a> if you are interested or if you have
           any questions.</p1>
           
-          <div class="resources pt-4 row">
+          <div class="department pt-4 row">
             <div class="col-lg">
               <h6 class="pt-3">School/Department:</h6>
             </div>
-            <div class="col-lg">
+            <div class="dropdown col-lg">
               <Dropdown options={options} placeholder="Any"/>
             </div>
           </div>
-
-          <div class="data-table pt-3">
-            <BasicTable></BasicTable>
-          </div>
         </div>
 
-        
+        <div class="data-table">
+          <DataTable class="data-table"></DataTable>
+        </div>
 
       </body>
+
+
+      <footer class="footer container-fluid static-top">
+
+      </footer>
 
     </div>
   );

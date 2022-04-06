@@ -45,10 +45,15 @@ function App() {
               <Dropdown options={options} placeholder="Any"/>
             </div>
           </div>
-        </div>
 
+<<<<<<< HEAD
         <div class="data-table">
           <DataTable class="data-table" sx={{color: white,}}></DataTable>
+=======
+          <div class="data-table mt-3">
+            <DataTable class="data-table"></DataTable>
+          </div>
+>>>>>>> a9939b025e1a7c420a101ffba0db99b819334194
         </div>
 
       </body>

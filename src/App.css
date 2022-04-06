@@ -4,7 +4,6 @@ html {
   font-family: "National", Helvetica, arial, sans-serif;
   background: #f7f6f1;
 }
-
 @media only screen and (min-width : 0px) {
   html {
     font-size: 1rem;

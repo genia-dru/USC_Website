@@ -48,7 +48,7 @@ function App() {
         </div>
 
         <div class="data-table">
-          <DataTable class="data-table"></DataTable>
+          <DataTable class="data-table" sx={{color: white,}}></DataTable>
         </div>
 
       </body>

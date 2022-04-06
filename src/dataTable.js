@@ -23,8 +23,8 @@ export default function dataTable() {
           
         <TableHead>
           <TableRow class="table-heading">
-            <TableCell align="left">School/Department</TableCell>
-            <TableCell align="left">Resources Available</TableCell>
+            <TableCell align="left" sx={{color: "white"}}>School/Department</TableCell>
+            <TableCell align="left" sx={{color: "white"}}>Resources Available</TableCell>
           </TableRow>
         </TableHead>
 

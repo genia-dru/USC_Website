@@ -45,10 +45,10 @@ function App() {
               <Dropdown options={options} placeholder="Any"/>
             </div>
           </div>
-        </div>
 
-        <div class="data-table">
-          <DataTable class="data-table"></DataTable>
+          <div class="data-table mt-3">
+            <DataTable class="data-table"></DataTable>
+          </div>
         </div>
 
       </body>

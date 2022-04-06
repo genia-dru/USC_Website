@@ -78,20 +78,19 @@ h3{
 }
 
 
-.department {
+/* .department {
   background-color: #eeebde;
   justify-content: center;
   padding: 0.8em;
-}
+} */
 
 
 .data-table {
   background: #eeebde;
   position: relative;
-  margin: 5% ;
 }
-.table-heading {
-  background: #F8F8F8;
+.table-heading{
+  background: #900;
 }
 
 footer {

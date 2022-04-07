@@ -4,7 +4,8 @@ import './App.css';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import DataTable from './dataTable.js';
-
+import MyComponent from './fetchdata.js'
+import Message from './fetchdata.js';
 
 
 const options = [
@@ -54,7 +55,7 @@ function App() {
 
       </body>
 
-
+      <Message></Message>
       <footer class="footer container-fluid static-top">
 
       </footer>

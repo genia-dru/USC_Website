@@ -2,7 +2,6 @@ html {
   font-size: 1rem;
   height: 100%;
   font-family: "National", Helvetica, arial, sans-serif;
-  background: #f7f6f1;
 }
 @media only screen and (min-width : 0px) {
   html {
@@ -76,20 +75,11 @@ h3{
   text-align: center;
 }
 
-
-/* .department {
-  background-color: #eeebde;
-  justify-content: center;
-  padding: 0.8em;
-} */
-
-
-.data-table {
-  background: #eeebde;
-  position: relative;
-}
 .table-heading{
   background: #900;
+}
+.table-body {
+  background: #fcfcfa;
 }
 
 footer {

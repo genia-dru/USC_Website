@@ -6,6 +6,7 @@ import 'react-dropdown/style.css';
 import DataTable from './dataTable.js';
 
 
+
 const options = [
   'one', 'two', 'three'
 ];
@@ -46,14 +47,9 @@ function App() {
             </div>
           </div>
 
-<<<<<<< HEAD
-        <div class="data-table">
-          <DataTable class="data-table" sx={{color: white,}}></DataTable>
-=======
-          <div class="data-table mt-3">
-            <DataTable class="data-table"></DataTable>
+          <div class="mt-3">
+            <DataTable></DataTable>
           </div>
->>>>>>> a9939b025e1a7c420a101ffba0db99b819334194
         </div>
 
       </body>

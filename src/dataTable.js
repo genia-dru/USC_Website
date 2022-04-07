@@ -1,4 +1,5 @@
-import * as React from 'react';
+// import * as React from 'react';
+import React, { useState } from "react";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -6,32 +7,68 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import SearchBar from 'material-ui-search-bar';
 
 function createData(name, resources) {
   return { name, resources };
 }
 
-const rows = [
+const dataRows = [
   createData('Viterbi', 'housing'),
-  createData('Marshall', 'funding, lab'),
+  createData('Marshall', 'lab'),
+  createData('Viterbi', 'ho'),
+  createData('Marshall', 'aef'),
+  createData('Viterbi', 'c'),
+  createData('Marshall', 'hel'),
+  createData('Viterbi', 'pet'),
+  createData('Marshall', 'spin'),
+  createData('Viterbi', 'food'),
+  createData('Marshall', 'money'),
+  createData('Viterbi', 'funds'),
+  createData('Marshall', 'help'),
+
 ];
 
-export default function dataTable() {
+const DataTable = () => {
+  const [rows, setRows] = useState(dataRows);
+  const [searched, setSearched] = useState("");
+
+  const requestSearch = (searchedVal) => {
+    const filteredRows = dataRows.filter((row) => {
+      return Object.keys(row).some((key) =>
+        row[key].toLowerCase().includes(searchedVal)
+      );
+    });
+    setRows(filteredRows);
+  };
+
+  const cancelSearch = () => {
+    setSearched("");
+    requestSearch(searched);
+  };
+
   return (
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
-          
-        <TableHead>
+    <Paper>
+
+    <SearchBar
+          value={searched}
+          onChange={(searchVal) => requestSearch(searchVal)}
+          onCancelSearch={() => cancelSearch()}
+    />
+
+    <TableContainer component={Paper} sx={{ maxHeight: 400 }}>
+      <Table>
+        <TableHead stickyHeader>
           <TableRow class="table-heading">
             <TableCell align="left" sx={{color: "white"}}>School/Department</TableCell>
             <TableCell align="left" sx={{color: "white"}}>Resources Available</TableCell>
           </TableRow>
         </TableHead>
 
-        <TableBody>
+        <TableBody class="table-body" >
           {rows.map((row) => (
             <TableRow
-              key={row.name}
+              key={row.resources}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
@@ -45,5 +82,9 @@ export default function dataTable() {
 
       </Table>
     </TableContainer>
+
+    </Paper>
   );
 }
+
+export default DataTable;

@@ -6,11 +6,9 @@ import 'react-dropdown/style.css';
 import DataTable from './dataTable.js';
 
 
-
 const options = [
   'one', 'two', 'three'
 ];
-const defaultOption = options[0];
 
 function App() {
   return (
@@ -32,8 +30,8 @@ function App() {
           </div>
         </div>
 
-        <div class="content container justify-content col-xs-6 mt-5 col-lg-7">
-          <p1 class="text-justify">If you are a faculty member or a graduate student who left or is considering leaving Ukraine because of the war, USC 
+        <div class="content container justify-content-center col-xs-6 mt-5 col-lg-7">
+          <p1 class="text-align-center">If you are a faculty member or a graduate student who left or is considering leaving Ukraine because of the war, USC 
           may offer you a temporary place to continue your work or studies. Funding and visa support are available. See below 
           for the available opportunities in each USC school. Please contact <a href="email@usc.edu">email@usc.edu</a> if you are interested or if you have
           any questions.</p1>
@@ -50,6 +48,9 @@ function App() {
           <div class="mt-3">
             <DataTable></DataTable>
           </div>
+
+
+
         </div>
 
       </body>

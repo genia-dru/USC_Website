@@ -56,16 +56,14 @@ const DataTable = () => {
           onCancelSearch={() => cancelSearch()}
     />
     <br></br>
-
     <TableContainer component={Paper} sx={{ maxHeight: 400 }}>
       <Table  stickyHeader>
         <TableHead>
           <TableRow class="table-heading">
-            <TableCell align="left" sx={{color: "white", background: "#900"}}>School/Department</TableCell>
-            <TableCell align="left" sx={{color: "white", background: "#900"}}>Resources Available</TableCell>
+            <TableCell align="left" sx={{color: "white", background: "#900"}}>School/Department:</TableCell>
+            <TableCell align="left" sx={{color: "white", background: "#900"}}>Resources Available:</TableCell>
           </TableRow>
         </TableHead>
-
         <TableBody class="table-body" >
           {rows.map((row) => (
             <TableRow
@@ -76,11 +74,9 @@ const DataTable = () => {
                 {row.name}
               </TableCell>
               <TableCell align="left">{row.resources}</TableCell>
-
             </TableRow>
           ))}
         </TableBody>
-
       </Table>
     </TableContainer>
     </Paper>

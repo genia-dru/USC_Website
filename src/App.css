@@ -27,8 +27,6 @@ html {
     min-height: 60vh;
   }
 }
-
-
 .App-header{
   position: relative;
   margin: -1rem -50vw;
@@ -52,8 +50,6 @@ html {
   height: 40px;
   width: auto;
 }
-
-
 h3{
    line-height: 1.3em;
    letter-spacing: 0.2m;
@@ -74,8 +70,6 @@ h3{
   color: #FFCC00;
   text-align: center;
 }
-
-
 .searchbar {
   color: #333;
 }
@@ -86,8 +80,6 @@ h3{
 .table-body {
   background: #fcfcfa;
 }
-
-
 footer {
   position: relative;
   margin: -1rem -50vw;

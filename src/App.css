@@ -75,12 +75,18 @@ h3{
   text-align: center;
 }
 
+
+.searchbar {
+  color: #333;
+}
 .table-heading{
   background: #900;
+  position: sticky;
 }
 .table-body {
   background: #fcfcfa;
 }
+
 
 footer {
   position: relative;

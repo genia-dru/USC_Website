@@ -8,6 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import SearchBar from 'material-ui-search-bar';
+import { Divider } from "@mui/material";
 
 function createData(name, resources) {
   return { name, resources };
@@ -48,20 +49,20 @@ const DataTable = () => {
   };
 
   return (
-    <Paper>
-
-    <SearchBar
+    <Paper sx={{ boxShadow: "none" }}>
+    <SearchBar class="searchbar"
           value={searched}
           onChange={(searchVal) => requestSearch(searchVal)}
           onCancelSearch={() => cancelSearch()}
     />
+    <br></br>
 
     <TableContainer component={Paper} sx={{ maxHeight: 400 }}>
-      <Table>
-        <TableHead stickyHeader>
+      <Table  stickyHeader>
+        <TableHead>
           <TableRow class="table-heading">
-            <TableCell align="left" sx={{color: "white"}}>School/Department</TableCell>
-            <TableCell align="left" sx={{color: "white"}}>Resources Available</TableCell>
+            <TableCell align="left" sx={{color: "white", background: "#900"}}>School/Department</TableCell>
+            <TableCell align="left" sx={{color: "white", background: "#900"}}>Resources Available</TableCell>
           </TableRow>
         </TableHead>
 
@@ -82,7 +83,6 @@ const DataTable = () => {
 
       </Table>
     </TableContainer>
-
     </Paper>
   );
 }

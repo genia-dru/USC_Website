@@ -2,9 +2,7 @@ html {
   font-size: 1rem;
   height: 100%;
   font-family: "National", Helvetica, arial, sans-serif;
-  background: #f7f6f1;
 }
-
 @media only screen and (min-width : 0px) {
   html {
     font-size: 1rem;
@@ -78,20 +76,17 @@ h3{
 }
 
 
-/* .department {
-  background-color: #eeebde;
-  justify-content: center;
-  padding: 0.8em;
-} */
-
-
-.data-table {
-  background: #eeebde;
-  position: relative;
+.searchbar {
+  color: #333;
 }
 .table-heading{
   background: #900;
+  position: sticky;
 }
+.table-body {
+  background: #fcfcfa;
+}
+
 
 footer {
   position: relative;

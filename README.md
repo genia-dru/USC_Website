@@ -20,6 +20,7 @@ If you are trying to run the react app using `npm start` and there are errors, m
 
 ```sh
 npm install @material-ui/core
+npm install @mui/icons-material
 npm install semantic-ui-react semantic-ui-css
 npm install react react-dom
 npm install axios

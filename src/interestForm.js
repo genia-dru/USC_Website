@@ -3,6 +3,7 @@ import React from 'react';
 import { Button, Form, Container, Header } from 'semantic-ui-react';
 import './interestForm.css';
 import axios from 'axios';
+import SubmitMessage from './submitMessage.js';
 
 class InterestForm extends React.Component {
     constructor(props) {
@@ -32,14 +33,15 @@ class InterestForm extends React.Component {
             .then(response => {
                 console.log(response);
             })
+            
             .catch((error) => {
                 if (error.response){
                     console.log(error.response);
-                    }else if(error.request){
+                }else if(error.request){
                     console.log(error.request)
-                    }else if(error.message){
-                        console.log(error.message)
-                    }
+                }else if(error.message){
+                    console.log(error.message)
+                }
             })
             this.setState ({
                 Name: '',
@@ -103,6 +105,7 @@ class InterestForm extends React.Component {
                 </Form.Field>
                 
                 <Button className="submit-button" type='submit'>Submit</Button>
+                <SubmitMessage></SubmitMessage>
             </Form>
             </Container>
         )

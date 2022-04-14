@@ -1,0 +1,26 @@
+.form-container {
+    width: 80vw;
+}
+
+.interest-form {
+    padding: 20px;
+    width: 100%;
+}
+
+.form-field {
+    padding: 3px;
+}
+
+.form-field label{
+    padding-right: 10px;
+}
+
+.message-field {
+    width: 100%;
+}
+
+.submit-button {
+    background-color: #900;
+    color: white;
+    border: none;
+}

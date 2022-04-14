@@ -15,21 +15,48 @@ function App() {
       </header>
     
       <body class="container-fluid p-0 m-0">
+
+        {/* HEADER SECTION */}
         <div class="heading-title pt-5 pb-3 bg-image d-flex align-items-center">
           <div class="container-fluid">
-            <h3 class="d-flex pb-0 mb-0 container-fluid justify-content-center">USC Support for Ukraine</h3>
+            <h3 class="d-flex pb-0 mb-0 container-fluid justify-content-center">USC Ukraine Assistance Hub</h3>
             <p class="d-flex  pt-0 mt-0 container-fluid justify-content-center">USC faculty offer support for scholars and students displaced by the war in Ukraine</p>
           </div>
         </div>
+
         <div class="content container justify-content-center col-xs-6 mt-5 col-lg-7">
+        {/* INTRODUCTION SECTION CODE BELOW */}
+
           <p1 class="text-align-center">If you are a faculty member or a graduate student who left or is considering leaving Ukraine because of the war, USC 
           may offer you a temporary place to continue your work or studies. Funding and visa support are available. See below 
           for the available opportunities in each USC school. Please contact <a href="email@usc.edu">email@usc.edu</a> if you are interested or if you have
           any questions.</p1>
           
           
+        {/* GENERAL PATHWAYS SECTION BELOW */}
+
+
+
+
+        {/* CURRENT OPENINGS SECTION BELOW */}
+
+
+
+
+        {/* INTEREST FORM SECTION BELOW */}
+
+
+
+
+        {/* NON-USC OPPORTUNITIES SECTION BELOW */}
+
+
+
         </div>
+
       </body>
+
+
       <footer class="footer container-fluid static-top">
       </footer>
     </div>

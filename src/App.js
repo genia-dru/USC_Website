@@ -2,6 +2,7 @@ import logo from './usc-logo.png';
 import logo_mobile from './usc-logo-mobile.png';
 import './App.css';
 import 'react-dropdown/style.css';
+import InterestForm from './interestForm.js';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
         </div>
 
         <div class="content container justify-content-center col-xs-6 mt-5 col-lg-7">
-        {/* INTRODUCTION SECTION CODE BELOW */}
+        {/* ------------ INTRODUCTION SECTION CODE ------------ */}
 
           <p1 class="text-align-center">If you are a faculty member or a graduate student who left or is considering leaving Ukraine because of the war, USC 
           may offer you a temporary place to continue your work or studies. Funding and visa support are available. See below 
@@ -33,22 +34,20 @@ function App() {
           any questions.</p1>
           
           
-        {/* GENERAL PATHWAYS SECTION BELOW */}
+        {/* ------------ GENERAL PATHWAYS SECTION ------------ */}
 
 
 
 
-        {/* CURRENT OPENINGS SECTION BELOW */}
+        {/* ------------ CURRENT OPENINGS SECTION ------------ */}
 
 
 
 
-        {/* INTEREST FORM SECTION BELOW */}
+        {/* ------------ INTEREST FORM SECTION ------------ */}
+          <InterestForm></InterestForm>
 
-
-
-
-        {/* NON-USC OPPORTUNITIES SECTION BELOW */}
+        {/* ------------ NON-USC OPPORTUNITIES SECTION ------------ */}
 
 
 

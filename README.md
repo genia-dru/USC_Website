@@ -16,7 +16,7 @@ Yaxi Liu
 
 # Developer Notes: 
 **Installing Packages:**  
-If you are trying to run the react app using `npm start`and there are errors, make sure the following packages are installed.
+If you are trying to run the react app using `npm start` and there are errors, make sure the following packages are installed.
 
 ```sh
 npm install @material-ui/core

@@ -1,9 +1,9 @@
 import { render } from 'react-dom';
 import React from 'react';
-import { Button, Form, Container, Header } from 'semantic-ui-react';
+import { Form, Container, Header } from 'semantic-ui-react';
 import './interestForm.css';
 import axios from 'axios';
-import SubmitMessage from './submitMessage.js';
+import SubmitButton from './submitButton.js';
 
 class InterestForm extends React.Component {
     constructor(props) {
@@ -22,41 +22,42 @@ class InterestForm extends React.Component {
     }
 
     // SUBMIT HANDLERS
-        changeHandler = (e) => {
-            this.setState({[e.target.name] : e.target.value})
-        }
-        submitHandler = e => {
-            e.preventDefault();
-            console.log(this.state);
+    changeHandler = (e) => {
+        this.setState({[e.target.name] : e.target.value})
+    }
+    submitHandler = e => {
+        e.preventDefault();
+        console.log(this.state);
 
-            axios.post('https://sheet.best/api/sheets/a185bc92-03fa-4be4-a316-a8a46ddd9e6f', this.state)
-            .then(response => {
-                console.log(response);
-            })
-            
-            .catch((error) => {
-                if (error.response){
-                    console.log(error.response);
-                }else if(error.request){
-                    console.log(error.request)
-                }else if(error.message){
-                    console.log(error.message)
-                }
-            })
-            this.setState ({
-                Name: '',
-                Email: '',
-                CurrentResidence: '',
-                CurrentInstitution: '',
-                Position: '',
-                Interest: '',
-                USCDepartment: '',
-                Message: ''
-        });
+        axios.post('https://sheet.best/api/sheets/a185bc92-03fa-4be4-a316-a8a46ddd9e6f', this.state)
+        .then(response => {
+            console.log(response);
+        })
+        
+        .catch((error) => {
+            if (error.response){
+                console.log(error.response);
+            }else if(error.request){
+                console.log(error.request)
+            }else if(error.message){
+                console.log(error.message)
+            }
+        })
+        this.setState ({
+            Name: '',
+            Email: '',
+            CurrentResidence: '',
+            CurrentInstitution: '',
+            Position: '',
+            Interest: '',
+            USCDepartment: '',
+            Message: ''
+    });
     }
 
     render() {
         const { Name, Email, CurrentResidence, CurrentInstitution, Position, Interest, USCDepartment, Message} = this.state;
+        
         return (
             <Container fluid className="form-container">
             <Header as='h2' className="form-header">Interest Form</Header>
@@ -104,8 +105,7 @@ class InterestForm extends React.Component {
                     <textarea rows="3" className="message-field" placeholder='Please tell us a little about yourself and what kinds of opportunities you are looking for.' type="textarea" name="Message" value={Message} onChange={this.changeHandler} />
                 </Form.Field>
                 
-                <Button className="submit-button" type='submit'>Submit</Button>
-                <SubmitMessage></SubmitMessage>
+                <SubmitButton className="submit-button"></SubmitButton>
             </Form>
             </Container>
         )

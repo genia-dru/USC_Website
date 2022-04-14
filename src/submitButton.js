@@ -3,8 +3,9 @@ import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import './interestForm.css'
 
-export default function SubmitMessage() {
+export default function SubmitButton() {
   const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
@@ -21,15 +22,11 @@ export default function SubmitMessage() {
 
   const action = (
     <React.Fragment>
-      <Button color="secondary" size="small" onClick={handleClose}>
-        UNDO
-      </Button>
       <IconButton
+        color="inherit"
         size="small"
         aria-label="close"
-        color="inherit"
-        onClick={handleClose}
-      >
+        onClick={handleClose} >
         <CloseIcon fontSize="small" />
       </IconButton>
     </React.Fragment>
@@ -37,12 +34,12 @@ export default function SubmitMessage() {
 
   return (
     <div>
-      <Button onClick={handleClick}>Open simple snackbar</Button>
+      <Button className="submit-button" type='submit' onClick={handleClick}>Submit</Button>
       <Snackbar
         open={open}
         autoHideDuration={6000}
         onClose={handleClose}
-        message="Note archived"
+        message="Form Successfully Submitted"
         action={action}
       />
     </div>

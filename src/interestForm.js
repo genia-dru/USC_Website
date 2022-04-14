@@ -1,74 +1,113 @@
-//import { render } from '@testing-library/react';
-//import 'semantic-ui-css';
-//import { render } from '@testing-library/react';
-import React from 'react';
-import { Button, Form, Container, Header, Dropdown } from 'semantic-ui-react';
+import { render } from 'react-dom';
+import React, { useState } from 'react';
+import { Button, Form, Container, Header } from 'semantic-ui-react';
 import './interestForm.css';
+import axios from 'axios';
 
+class InterestForm extends React.Component {
+    constructor(props) {
+        super(props)
 
+        this.state = {
+            Name: '',
+            Email: '',
+            CurrentResidence: '',
+            CurrentInstitution: '',
+            Position: '',
+            Interest: '',
+            USCDepartment: '',
+            Message: ''
+        }
+    }
 
-// const InterestForm = () => {
-export default function InterestForm () {
+    // SUBMIT HANDLERS
+        changeHandler = (e) => {
+            this.setState({[e.target.name] : e.target.value})
+        }
+        submitHandler = e => {
+            e.preventDefault();
+            console.log(this.state);
 
-    return (
-        <Container fluid className="form-container">
-        <Header as='h2'>Interest Form</Header>
-        <Form className="interest-form">
-            <Form.Field className="form-field">
-                <label>Name</label>
-                <input placeholder='Name' />
-            </Form.Field>
-            <Form.Field className="form-field">
-                <label>E-Mail</label>
-                <input placeholder='E-mail' />
-            </Form.Field>
-            <Form.Field className="form-field">
-                <label>Current place/country of residence</label>
-                <input placeholder='Residence' />
-            </Form.Field>
-            <Form.Field className="form-field">
-                <label>Current or most recent affiliation (institution)</label>
-                <input placeholder='Institution' />
-            </Form.Field>
+            axios.post('https://sheet.best/api/sheets/a185bc92-03fa-4be4-a316-a8a46ddd9e6f', this.state)
+            .then(response => {
+                console.log(response);
+            })
+            .catch((error) => {
+                if (error.response){
+                    console.log(error.response);
+                    }else if(error.request){
+                    console.log(error.request)
+                    }else if(error.message){
+                        console.log(error.message)
+                    }
+            })
+            this.setState ({
+                Name: '',
+                Email: '',
+                CurrentResidence: '',
+                CurrentInstitution: '',
+                Position: '',
+                Interest: '',
+                USCDepartment: '',
+                Message: ''
+        });
+    }
 
-            {/* dropdown here */}
-            <Form.Field className="form-field">
+    render() {
+        const { Name, Email, CurrentResidence, CurrentInstitution, Position, Interest, USCDepartment, Message} = this.state;
+        return (
+            <Container fluid className="form-container">
+            <Header as='h2'>Interest Form</Header>
+            <Form className="interest-form" onSubmit={this.submitHandler}>
+                <Form.Field className="form-field">
+                    <label>Name</label>
+                    <input placeholder='Name' type="text" name="Name" value={Name} onChange={this.changeHandler} />
+                </Form.Field>
+                <Form.Field className="form-field">
+                    <label>E-Mail</label>
+                    <input placeholder='E-mail' type="text" name="Email" value={Email} onChange={this.changeHandler} />
+                </Form.Field>
+                <Form.Field className="form-field">
+                    <label>Current place/country of residence</label>
+                    <input placeholder='Residence' type="text" name="CurrentResidence" value={CurrentResidence} onChange={this.changeHandler} />
+                </Form.Field>
+                <Form.Field className="form-field">
+                    <label>Current or most recent affiliation (institution)</label>
+                    <input placeholder='Institution' type="text" name="CurrentInstitution" value={CurrentInstitution} onChange={this.changeHandler} />
+                </Form.Field>
+
+                <Form.Field className="form-field">
+                    <label>Current Position</label>
+                    <select value={Position} name="Position" onChange={this.changeHandler} type="select">
+                        <option value="">Select a Position</option>
+                        <option value="faculty">Faculty</option>
+                        <option value="postDoc">PostDoctorate</option>
+                        <option value="phD">PhD Student</option>
+                        <option value="masters">Masters Student</option>
+                        <option value="undergrad">Undergraduate Student</option>
+                        <option value="other">Other</option>
+                    </select>
+                </Form.Field>
+
+                <Form.Field className="form-field">
+                    <label>Your primary area(s) of interest</label>
+                    <input placeholder='Interests' type="text" name="Interest" value={Interest} onChange={this.changeHandler} />
+                </Form.Field>
+                <Form.Field className="form-field">
+                    <label>Your primary choise of School/Department/Program at USC</label>
+                    <input placeholder='School/Department' type="text" name="USCDepartment" value={USCDepartment} onChange={this.changeHandler} />
+                </Form.Field>
+                <Form.Field className="form-field">
+                    <label>Your Message</label>
+                    <textarea rows="3" className="message-field" placeholder='Please tell us a little about yourself and what kinds of opportunities you are looking for.' type="textarea" name="Message" value={Message} onChange={this.changeHandler} />
+                </Form.Field>
                 
-                <label>Current Position</label>
-                <div class="ui selection dropdown">
-                    <input type="hidden" name="gender"></input>
-                    <i class="dropdown icon"></i>
-                    <div class="default text">Position</div>
-                    <div class="menu">
-                        <div class="item" data-value="0">Faculty</div>
-                        <div class="item" data-value="1">Postdoctorates</div>
-                        <div class="item" data-value="2">PhD Student</div>
-                        <div class="item" data-value="3">Masters Student</div>
-                        <div class="item" data-value="4">Undergraduate Student</div>
-                        <div class="item" data-value="5">Other</div>
-                    </div>
-                </div>
-            </Form.Field>
-
-            <Form.Field className="form-field">
-                <label>Your primary area(s) of interest</label>
-                <input placeholder='Interests' />
-            </Form.Field>
-            <Form.Field className="form-field">
-                <label>Your primary choise of School/Department/Program at USC</label>
-                <input placeholder='School/Department' />
-            </Form.Field>
-            <Form.Field className="form-field">
-                <label>Your Message</label>
-                <textarea rows="3" className="message-field" placeholder='Please tell us a little about yourself and what kinds of opportunities you are looking for' />
-            </Form.Field>
-            
-            <Button className="submit-button" type='submit'>Submit</Button>
-        </Form>
-        </Container>
-    )
-
-
-
+                <Button className="submit-button" type='submit'>Submit</Button>
+            </Form>
+            </Container>
+        )
+    }
 }
-// export default InterestForm; 
+
+render(<InterestForm />, document.getElementById("root"));
+export default InterestForm; 

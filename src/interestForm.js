@@ -1,5 +1,5 @@
 import { render } from 'react-dom';
-import React, { useState } from 'react';
+import React from 'react';
 import { Button, Form, Container, Header } from 'semantic-ui-react';
 import './interestForm.css';
 import axios from 'axios';
@@ -57,7 +57,7 @@ class InterestForm extends React.Component {
         const { Name, Email, CurrentResidence, CurrentInstitution, Position, Interest, USCDepartment, Message} = this.state;
         return (
             <Container fluid className="form-container">
-            <Header as='h2'>Interest Form</Header>
+            <Header as='h2' className="form-header">Interest Form</Header>
             <Form className="interest-form" onSubmit={this.submitHandler}>
                 <Form.Field className="form-field">
                     <label>Name</label>
@@ -94,11 +94,11 @@ class InterestForm extends React.Component {
                     <input placeholder='Interests' type="text" name="Interest" value={Interest} onChange={this.changeHandler} />
                 </Form.Field>
                 <Form.Field className="form-field">
-                    <label>Your primary choise of School/Department/Program at USC</label>
+                    <label>Your primary choice of School/Department/Program at USC</label>
                     <input placeholder='School/Department' type="text" name="USCDepartment" value={USCDepartment} onChange={this.changeHandler} />
                 </Form.Field>
                 <Form.Field className="form-field">
-                    <label>Your Message</label>
+                    <label>Message</label>
                     <textarea rows="3" className="message-field" placeholder='Please tell us a little about yourself and what kinds of opportunities you are looking for.' type="textarea" name="Message" value={Message} onChange={this.changeHandler} />
                 </Form.Field>
                 

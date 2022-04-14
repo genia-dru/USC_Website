@@ -1,10 +1,22 @@
 .form-container {
     width: 80vw;
+    margin-top: 20px;
+    padding: 5px 0px 15px 0px;
+    background-color: white;
+}
+
+.form-header {
+    background-color: #900;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .interest-form {
-    padding: 20px;
     width: 100%;
+    border: 5px solid #F7F6F1;
+    border-top: none;
+    padding: 10px;
 }
 
 .form-field {
@@ -13,7 +25,28 @@
 
 .form-field label{
     padding-right: 10px;
+
 }
+
+.form-field input {
+    background-color: #EEEBDE;
+    padding: 3px;
+    border: none;
+    color: black;
+}
+select {
+    background-color: #EEEBDE;
+    border: none;
+    padding: 3px;
+    color: black;
+}
+textarea {
+    background-color: #EEEBDE;
+    border: none;
+    padding: 3px;
+    color: black;
+}
+
 
 .message-field {
     width: 100%;

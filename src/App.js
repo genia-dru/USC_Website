@@ -49,19 +49,19 @@ function App() {
          <h1 class="d-flex pb-0 mb-0 container-fluid justify-content-center"><b>General Pathways for Interested Scholars and Students</b></h1><br/>
           <p1 class="text-align-center">
             <b>Undergraduate Programs:</b> leaving this empty before we know what we can offer. 
-            To learn more about undergraduate education at USC, please click <a href="https://admission.usc.edu/">here</a>.<br/><br/>
+            To learn more about undergraduate education at USC, please click <a target="_blank" href="https://admission.usc.edu/">here</a>.<br/><br/>
 
             <b>Master's Programs:</b> We may be able to offer you to continue your studies at 
             USC while the war lasts. Funding, visa support, accommodation, mentoring, and other resources are available. To learn more, please fill out 
-            the <b><u><a href="INTERESTFORMLINK">interest form</a></u></b> here. You may review a list of all master's programs at USC <a href="https://gradadm.usc.edu/our-programs/">here</a>.<br/><br/>
+            the <b><u><a href="INTERESTFORMLINK">interest form</a></u></b> here. You may review a list of all master's programs at USC <a target="_blank" href="https://gradadm.usc.edu/our-programs/">here</a>.<br/><br/>
             
             <b>Doctoral Programs:</b> We may be able to offer you to continue your studies and 
             research at USC. Lab space and placement in specific research teams may be available. Funding, visa support, accommodation, mentoring, and other 
-            resources are available. To learn more, please fill out the <b><u><a href="INTERESTFORMLINK">interest form</a></u></b> here. You may review a list of all doctoral programs at USC <a href="https://gradadm.usc.edu/our-programs/">here</a>.<br/><br/>
+            resources are available. To learn more, please fill out the <b><u><a href="INTERESTFORMLINK">interest form</a></u></b> here. You may review a list of all doctoral programs at USC <a target="_blank" href="https://gradadm.usc.edu/our-programs/">here</a>.<br/><br/>
             
             <b>Postdoctoral and Visiting Faculty Opportunities:</b> We may be able to offer you to 
             continue your work or research at USC. Research and teaching opportunities may be available. Funding, visa support, accommodation, mentoring, and 
-            other resources are available. To learn more, please fill out the <b><u><a href="INTERESTFORMLINK">interest form</a></u></b> here. Please fill the form out even if you apply directly via <a href="https://usccareers.usc.edu/">USC Careers</a>.
+            other resources are available. To learn more, please fill out the <b><u><a href="INTERESTFORMLINK">interest form</a></u></b> here. Please fill the form out even if you apply directly via <a target="_blank" href="https://usccareers.usc.edu/">USC Careers</a>.
           </p1>
         </div> 
 
@@ -73,7 +73,7 @@ function App() {
 
         {/* ------------ INTEREST FORM SECTION ------------ */}
 
-          <InterestForm></InterestForm>
+          <InterestForm className="interest-form-link"></InterestForm>
 
         {/* ------------ NON-USC OPPORTUNITIES SECTION ------------ */}
 

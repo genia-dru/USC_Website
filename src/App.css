@@ -27,8 +27,6 @@ html {
     min-height: 60vh;
   }
 }
-
-
 .App-header{
   position: relative;
   margin: -1rem -50vw;
@@ -52,12 +50,15 @@ html {
   height: 40px;
   width: auto;
 }
-
-
+h1{
+  line-height: 1.3em;
+  letter-spacing: 0.2m;
+  text-align: center;
+}
 h3{
-   line-height: 1.3em;
-   letter-spacing: 0.2m;
-   text-align: center;
+  line-height: 1.3em;
+  letter-spacing: 0.2m;
+  text-align: center;
 }
 .heading-title{
   background:
@@ -74,8 +75,6 @@ h3{
   color: #FFCC00;
   text-align: center;
 }
-
-
 
 
 

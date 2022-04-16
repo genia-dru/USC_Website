@@ -73,7 +73,7 @@ function App() {
 
         {/* ------------ INTEREST FORM SECTION ------------ */}
 
-          <InterestForm className="interest-form-link"></InterestForm>
+          <InterestForm id="interest-form-link"></InterestForm>
 
         {/* ------------ NON-USC OPPORTUNITIES SECTION ------------ */}
 

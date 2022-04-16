@@ -75,6 +75,17 @@ h3{
   color: #FFCC00;
   text-align: center;
 }
+
+
+.undergrad-pic {
+  float: left;
+  width: 100px;
+  height: auto;
+}
+.program-text {
+  float: right;
+}
+
 footer {
   position: relative;
   margin: -1rem -50vw;

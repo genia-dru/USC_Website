@@ -59,7 +59,6 @@ class InterestForm extends React.Component {
         
         return (
             <Container fluid className="form-container">
-            <Header as='h2' className="form-header">Interest Form</Header>
             <Form className="interest-form" onSubmit={this.submitHandler}>
                 <Form.Field className="form-field">
                     <label>Name</label>

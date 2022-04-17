@@ -46,45 +46,67 @@ function App() {
           
         {/* ------------ GENERAL PATHWAYS SECTION ------------ */}
         <div class="content container justify-content-center col-xs-6 mt-5 col-lg-7">
-         <h1 class="section-headers d-flex pb-0 mb-0 container-fluid justify-content-center">
-           <b>General Pathways for Interested Scholars and Students</b>
+          <h1 class="section-headers d-flex pb-0 mb-0 container-fluid justify-content-center">
+            <b>General Pathways for Interested Scholars and Students</b>
           </h1><br/>
-          <p1 class="text-align-center">
-            <div class="undergrad-pathway">
-              <img src='https://lh3.googleusercontent.com/gZrEU4O47bhYHpxq4NIPuNE60pkGsdp_uSQP6I25iUW8Ab1fDJAozs_qxm7u2s_B972__w=s85' class='program-pic' alt='Undergraduate Program Picture'></img> <br></br>
-              <p className='program-text'>
-                <b>Undergraduate Programs:</b> leaving this empty before we know what we can offer. 
-                To learn more about undergraduate education at USC, please click <a target="_blank" href="https://admission.usc.edu/">here</a>.<br/><br/>
-              </p>
-            </div>
-            <div class="masters-pathway">
-              <img src='https://lh3.googleusercontent.com/2YsteQ-Qykby1nz5RmXaMhZGwp2eD7Fd1suQv0uVmQ5jJdaL_E-Iu1cqZu_QMTPb3OjRRA=s85' class='program-pic' alt='Undergraduate Program Picture'></img> <br></br>
-              <p className='program-text'>
-                <b>Master's Programs:</b> We may be able to offer you to continue your studies at 
-                USC while the war lasts. Funding, visa support, accommodation, mentoring, and other resources are available. To learn more, please fill out 
-                the <b><u><a href="INTERESTFORMLINK">interest form</a></u></b> here. You may review a list of all master's programs at USC <a target="_blank" href="https://gradadm.usc.edu/our-programs/">here</a>.<br/><br/>
-              </p> 
-            </div>
-            <div class="doctoral-pathway">
-              <img src='https://lh3.googleusercontent.com/gfgvli9RsbGjX3hGuZ8EJQgPJw3nFeWohte_GPcsF-H4_xq5X59Zwol2CYAMqJtQQQjx=s85' class='program-pic' alt='Undergraduate Program Picture'></img> <br></br>
-              <p className='program-text'>  
-                <b>Doctoral Programs:</b> We may be able to offer you to continue your studies and 
-                research at USC. Lab space and placement in specific research teams may be available. Funding, visa support, accommodation, mentoring, and other 
-                resources are available. To learn more, please fill out the <b><u><a href="INTERESTFORMLINK">interest form</a></u></b> here. You may review a list of all doctoral programs at USC <a target="_blank" href="https://gradadm.usc.edu/our-programs/">here</a>.<br/><br/>
-              </p> 
-            </div>
-            <div class="postdoc-pathway">
-              <img src='https://lh3.googleusercontent.com/hKdbgcVNUOMm4WcEWikQvOtHlkESjufsQUEyQIsc38UyT-bre5E6-t3Y5aGPjC0QfEeHaO4=s85' class='program-pic' alt='Undergraduate Program Picture'></img> <br></br>
-              <p className='program-text'>
-                <b>Postdoctoral and Visiting Faculty Opportunities:</b> We may be able to offer you to 
-                continue your work or research at USC. Research and teaching opportunities may be available. Funding, visa support, accommodation, mentoring, and 
-                other resources are available. To learn more, please fill out the <b><u><a href="INTERESTFORMLINK">interest form</a></u></b> here. Please fill the form out even if you apply directly via <a target="_blank" href="https://usccareers.usc.edu/">USC Careers</a>.
-              </p>  
-            </div>
-          </p1>
-        </div> 
 
+          <table>
+            <tr>
+              <td>
+                <img src='https://lh3.googleusercontent.com/gZrEU4O47bhYHpxq4NIPuNE60pkGsdp_uSQP6I25iUW8Ab1fDJAozs_qxm7u2s_B972__w=s85' 
+                class='table-program-pic' alt='Undergraduate Program'></img>
+              </td>
+              <td>
+                <p className='table-program-text'>
+                  <b>Undergraduate Programs:</b> leaving this empty before we know what we can offer. 
+                  To learn more about undergraduate education at USC, please click <a target="_blank" href="https://admission.usc.edu/">here</a>.<br/><br/>
+                </p>
+              </td>
+            </tr>
 
+            <tr>
+              <td>
+                <img src='https://lh3.googleusercontent.com/2YsteQ-Qykby1nz5RmXaMhZGwp2eD7Fd1suQv0uVmQ5jJdaL_E-Iu1cqZu_QMTPb3OjRRA=s85' 
+                class='table-program-pic' alt='Undergraduate Program'></img>
+              </td>
+              <td>
+                <p className='table-program-text'>
+                  <b>Master's Programs:</b> We may be able to offer you to continue your studies at 
+                  USC while the war lasts. Funding, visa support, accommodation, mentoring, and other resources are available. To learn more, please fill out 
+                  the <b><u><a href="INTERESTFORMLINK">interest form</a></u></b> here. You may review a list of all master's programs at USC <a target="_blank" href="https://gradadm.usc.edu/our-programs/">here</a>.<br/><br/>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src='https://lh3.googleusercontent.com/gfgvli9RsbGjX3hGuZ8EJQgPJw3nFeWohte_GPcsF-H4_xq5X59Zwol2CYAMqJtQQQjx=s85' 
+                class='table-program-pic' alt='Undergraduate Program'></img>
+              </td>
+              <td>
+                <p className='table-program-text'>
+                  <b>Doctoral Programs:</b> We may be able to offer you to continue your studies and 
+                  research at USC. Lab space and placement in specific research teams may be available. Funding, visa support, accommodation, mentoring, and other 
+                  resources are available. To learn more, please fill out the <b><u><a href="INTERESTFORMLINK">interest form</a></u></b> here. You may review a list of all doctoral programs at USC <a target="_blank" href="https://gradadm.usc.edu/our-programs/">here</a>.<br/><br/>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src='https://lh3.googleusercontent.com/hKdbgcVNUOMm4WcEWikQvOtHlkESjufsQUEyQIsc38UyT-bre5E6-t3Y5aGPjC0QfEeHaO4=s85' 
+                class='table-program-pic' alt='Undergraduate Program'></img>
+              </td>
+              <td>
+                <p className='table-program-text'>
+                  <b>Postdoctoral and Visiting Faculty Opportunities:</b> We may be able to offer you to 
+                  continue your work or research at USC. Research and teaching opportunities may be available. Funding, visa support, accommodation, mentoring, and 
+                  other resources are available. To learn more, please fill out the <b><u><a href="INTERESTFORMLINK">interest form</a></u></b> here. Please fill the form out even if you apply directly via <a target="_blank" href="https://usccareers.usc.edu/">USC Careers</a>.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
 
         {/* ------------ CURRENT OPENINGS SECTION ------------ */}
         <div class="content container justify-content-center col-xs-6 mt-5 col-lg-7">
@@ -92,11 +114,26 @@ function App() {
             <b>Current Openings Suitable for Ukrainian Scholars/Students at USC</b>
           </h1><br/>
 
+          <table>
+            <tr>
+              <tc>
+                <h3>Opportunity 1</h3>
+                <p>Type, School/Department</p>
+                <a>URL</a>
+              </tc>
+              <br/><br/>
+              <tc class="opening2">
+                <h3>Opportunity 2</h3>
+                <p>Type, School/Department</p>
+                <a>URL</a>
+              </tc>
+            </tr>
+          </table>
 
         </div>
 
         {/* ------------ INTEREST FORM SECTION ------------ */}
-
+          <h1 class="form-header"><b>Interest Form</b></h1>
           <InterestForm id="interest-form-link"></InterestForm>
 
         {/* ------------ NON-USC OPPORTUNITIES SECTION ------------ */}

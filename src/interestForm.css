@@ -5,17 +5,9 @@
     background-color: white;
 }
 
-.form-header {
-    background-color: #900;
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-}
-
 .interest-form {
     width: 100%;
     border: 5px solid #F7F6F1;
-    border-top: none;
     padding: 10px;
 }
 

@@ -51,6 +51,7 @@ html {
   width: auto;
 }
 h1{
+  font-size: 40%;
   line-height: 1.3em;
   letter-spacing: 0.2m;
   text-align: center;
@@ -76,13 +77,20 @@ h3{
   text-align: center;
 }
 
-
-.undergrad-pic {
-  float: left;
-  width: 100px;
-  height: auto;
+.table-program-pic {
+  vertical-align: middle;
 }
-.program-text {
+
+.table-program-text {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.openings-row {
+  display: inline;
+}
+
+.opening2 {
   float: right;
 }
 

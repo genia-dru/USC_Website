@@ -46,7 +46,7 @@ function App() {
           
         {/* ------------ GENERAL PATHWAYS SECTION ------------ */}
         <div class="content container justify-content-center col-xs-6 mt-5 col-lg-7">
-          <h4 class="section-headers d-flex pb-0 mb-0 m-0 p-0 container-fluid justify-content-center">
+          <h4 class="section-headers d-flex pb-0 mb-0 m-0 p-0 container-fluid ">
             General Pathways for Interested Scholars and Students
           </h4><br/>
 

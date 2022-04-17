@@ -10,6 +10,9 @@ html {
   .heading-title{
     min-height: 40vh;
   }
+  .heading-title p{
+    font-size: small;
+  }
 }
 @media only screen and (min-width : 768px) {
   html {
@@ -18,13 +21,19 @@ html {
   .heading-title{
     min-height: 60vh;
   }
+  .heading-title p{
+    font-size: medium;
+  }
 }
 @media only screen and (min-width : 992px) {
   html {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .heading-title{
     min-height: 60vh;
+  }
+  .heading-title p{
+    font-size: large;
   }
 }
 .App-header{
@@ -99,4 +108,11 @@ footer {
   margin: -1rem -50vw;
   width: 100vw;
   height: 75px;
+}
+
+.content h4{
+  font-weight: bolder;
+}
+.content p{
+  text-align: justify;
 }

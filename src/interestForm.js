@@ -79,7 +79,7 @@ class InterestForm extends React.Component {
 
                 <Form.Field className="form-field">
                     <label>Current Position</label>
-                    <select value={Position} name="Position" onChange={this.changeHandler} type="select" required>
+                    <select value={Position} name="Position" onChange={this.changeHandler} type="select" class="position" required>
                         <option value="">Select a Position</option>
                         <option value="faculty">Faculty</option>
                         <option value="postDoc">PostDoctorate</option>

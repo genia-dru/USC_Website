@@ -29,18 +29,19 @@ function App() {
 
 
         {/* ------------ INTRODUCTION SECTION CODE ------------ */}
-        <div class="content container justify-content-center col-xs-6 mt-5 col-lg-7">
+        <div class="content container col-xs-6 mt-5 col-lg-7">
 
-          Please see <b>general pathways</b> as well as <b>specific opportunities</b> for students and scholars listed 
+          <p>Please see <b>general pathways</b> as well as <b>specific opportunities</b> for students and scholars listed 
           below. Even if you do not see an existing opening, please submit your information through the Interest Form below. We will strive to connect you with specific 
           faculty and programs at USC.
 
           Over 350 USC-based faculty have expressed interest in supporting Ukrainian students and academics, and resources are continually being updated internally!<br/><br/>
         
-          <b>For USC Faculty:</b> If you'd like to add your resources or collaboration interests, please use <a href="#interest-form-link">this form</a>.<br/><br/>
+          <b>For USC Faculty:</b> If you'd like to add your resources or collaboration interests, please use <a href="https://docs.google.com/forms/d/e/1FAIpQLScsXK-KFfQnGe8jyvtR-CmS8L5YMyZ7VFKplx59SuyymKmeJA/viewform">this form</a>.<br/><br/>
         
           <i>This is a joint effort of USC faculty members with support and oversight by the Office of 
           Strategic and Global Initiatives at USC. For additional information, you can contact our working group directly via <a href="ukraineassistance@usc.edu">ukraineassistance@usc.edu</a>.</i>
+          </p>
         </div>
         
           
@@ -52,9 +53,9 @@ function App() {
 
           <table>
             <tr>
-              <td>
+              <td class='table-program-pic'><p>
                 <img src='https://lh3.googleusercontent.com/gZrEU4O47bhYHpxq4NIPuNE60pkGsdp_uSQP6I25iUW8Ab1fDJAozs_qxm7u2s_B972__w=s85' 
-                class='table-program-pic' alt='Undergraduate Program'></img>
+                alt='Undergraduate Program'></img></p>
               </td>
               <td>
                 <p className='table-program-text'>
@@ -65,9 +66,9 @@ function App() {
             </tr>
 
             <tr>
-              <td>
-                <img src='https://lh3.googleusercontent.com/2YsteQ-Qykby1nz5RmXaMhZGwp2eD7Fd1suQv0uVmQ5jJdaL_E-Iu1cqZu_QMTPb3OjRRA=s85' 
-                class='table-program-pic' alt='Undergraduate Program'></img>
+              <td class='table-program-pic'>
+                <p><img src='https://lh3.googleusercontent.com/2YsteQ-Qykby1nz5RmXaMhZGwp2eD7Fd1suQv0uVmQ5jJdaL_E-Iu1cqZu_QMTPb3OjRRA=s85' 
+                alt='Undergraduate Program'></img></p>
               </td>
               <td>
                 <p className='table-program-text'>
@@ -79,9 +80,9 @@ function App() {
             </tr>
 
             <tr>
-              <td>
-                <img src='https://lh3.googleusercontent.com/gfgvli9RsbGjX3hGuZ8EJQgPJw3nFeWohte_GPcsF-H4_xq5X59Zwol2CYAMqJtQQQjx=s85' 
-                class='table-program-pic' alt='Undergraduate Program'></img>
+              <td class='table-program-pic'>
+                <p><img src='https://lh3.googleusercontent.com/gfgvli9RsbGjX3hGuZ8EJQgPJw3nFeWohte_GPcsF-H4_xq5X59Zwol2CYAMqJtQQQjx=s85' 
+                alt='Undergraduate Program'></img></p>
               </td>
               <td>
                 <p className='table-program-text'>
@@ -93,9 +94,9 @@ function App() {
             </tr>
 
             <tr>
-              <td>
-                <img src='https://lh3.googleusercontent.com/hKdbgcVNUOMm4WcEWikQvOtHlkESjufsQUEyQIsc38UyT-bre5E6-t3Y5aGPjC0QfEeHaO4=s85' 
-                class='table-program-pic' alt='Undergraduate Program'></img>
+              <td class='table-program-pic'>
+                <p><img src='https://lh3.googleusercontent.com/hKdbgcVNUOMm4WcEWikQvOtHlkESjufsQUEyQIsc38UyT-bre5E6-t3Y5aGPjC0QfEeHaO4=s85' 
+                alt='Undergraduate Program'></img></p>
               </td>
               <td>
                 <p className='table-program-text'>

@@ -28,7 +28,6 @@
 }
 .form-field input::-webkit-input-placeholder { /* WebKit browsers */
     font-size: 0.7em;
-    padding-left: 5%;
 }
 
 .form-field input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
@@ -44,22 +43,19 @@
 }
 .form-field textarea::-webkit-input-placeholder { /* WebKit browsers */
     font-size: 0.7em;
-    padding-left: 2%;
+  
 }
 
 .form-field input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     font-size: 0.7em;
-    padding-left: 2%;
 }
 
 .form-field input::-moz-placeholder { /* Mozilla Firefox 19+ */
      font-size: 0.7em;
-     padding-left: 2%;
 }
 
 .form-field input:-ms-input-placeholder { /* Internet Explorer 10+ */
     font-size: 0.7em;
-    padding-left: 2%;
 }
 select {
     background-color: #EEEBDE;

@@ -37,10 +37,10 @@ function App() {
 
           Over 350 USC-based faculty have expressed interest in supporting Ukrainian students and academics, and resources are continually being updated internally!<br/><br/>
         
-          <b>For USC Faculty:</b> If you'd like to add your resources or collaboration interests, please use <a href="https://docs.google.com/forms/d/e/1FAIpQLScsXK-KFfQnGe8jyvtR-CmS8L5YMyZ7VFKplx59SuyymKmeJA/viewform">this form</a>.<br/><br/>
+          <b>For USC Faculty:</b> If you'd like to add your resources or collaboration interests, please use <a href="https://docs.google.com/forms/d/e/1FAIpQLScsXK-KFfQnGe8jyvtR-CmS8L5YMyZ7VFKplx59SuyymKmeJA/viewform" target='_blank'>this form</a>.<br/><br/>
         
           <i>This is a joint effort of USC faculty members with support and oversight by the Office of 
-          Strategic and Global Initiatives at USC. For additional information, you can contact our working group directly via <a href="ukraineassistance@usc.edu">ukraineassistance@usc.edu</a>.</i>
+          Strategic and Global Initiatives at USC. For additional information, you can contact our working group directly via <a href="mailto:ukraineassistance@usc.edu">ukraineassistance@usc.edu</a>.</i>
           </p>
         </div>
         
@@ -59,7 +59,7 @@ function App() {
               </td>
               <td>
                 <p className='table-program-text'>
-                  <b>Undergraduate Programs:</b> leaving this empty before we know what we can offer. 
+                  <b>Undergraduate Programs: </b>  
                   To learn more about undergraduate education at USC, please click <a target="_blank" href="https://admission.usc.edu/">here</a>.<br/><br/>
                 </p>
               </td>
@@ -110,7 +110,7 @@ function App() {
           {/* ------------ INTEREST FORM SECTION ------------ */}
           <h4 class="form-header mt-4" id="interest-form-link">Interest Form</h4>
           <InterestForm></InterestForm>
-          <p>Click <a href="#">here</a> for Non-USC Opportunities Suitable for Ukrainian Scholars/Students</p>
+          {/* <p>Click <a href="#">here</a> for Non-USC Opportunities Suitable for Ukrainian Scholars/Students</p> */}
         </div>
 
         {/* ------------ CURRENT OPENINGS SECTION ------------ */}

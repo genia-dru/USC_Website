@@ -1,6 +1,6 @@
 import { render } from 'react-dom';
 import React from 'react';
-import { Button, Form, Container, Header } from 'semantic-ui-react';
+import { Button, Form, Container } from 'semantic-ui-react';
 import './interestForm.css';
 import axios from 'axios';
 

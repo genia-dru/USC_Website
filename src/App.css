@@ -87,6 +87,8 @@ h3{
 }
 
 .table-program-pic {
+  width: 85px;
+  height: auto;
   vertical-align: top;
 }
 
@@ -95,13 +97,18 @@ h3{
   margin-left: 10px;
 }
 
-.openings-row {
+.form-header {
+  margin-top: 15px;
+  margin-bottom: -10px;
+}
+
+/* .openings-row {
   display: inline;
 }
 
 .opening2 {
   float: right;
-}
+} */
 
 footer {
   position: relative;

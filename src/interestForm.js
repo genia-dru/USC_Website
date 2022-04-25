@@ -1,8 +1,9 @@
 import { render } from 'react-dom';
 import React from 'react';
-import { Button, Form, Container } from 'semantic-ui-react';
+import { Form, Container } from 'semantic-ui-react';
 import './interestForm.css';
 import axios from 'axios';
+import SubmitPopup from './formPopup';
 
 class InterestForm extends React.Component {
     constructor(props) {
@@ -18,7 +19,12 @@ class InterestForm extends React.Component {
             USCDepartment: '',
             Message: ''
         }
+
+        this.fields = this.state.fields;
+        this.formIsValid = true;
     }
+    // VALIDATION
+    
 
     // SUBMIT HANDLERS
     changeHandler = (e) => {
@@ -105,7 +111,8 @@ class InterestForm extends React.Component {
                         type="textarea" name="Message" value={Message} onChange={this.changeHandler} required/>
                 </Form.Field>
                 
-                <Button className="submit-button" type='submit' >Submit</Button>
+                {/* <Button className="submit-button" type='submit' >Submit</Button> */}
+                <SubmitPopup></SubmitPopup>
 
             </Form>
             </Container>

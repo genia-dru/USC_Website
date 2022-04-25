@@ -7,6 +7,7 @@ import postdoc from './postdoc.png'
 import './App.css';
 import 'react-dropdown/style.css';
 import InterestForm from './interestForm.js';
+// import Testing from './formTest';
 
 function App() {
   return (
@@ -119,7 +120,10 @@ function App() {
           {/* ------------ INTEREST FORM SECTION ------------ */}
           <h4 class="form-header" id="interest-form-link">Interest Form</h4>
           <InterestForm></InterestForm>
-          {/* <p>Click <a href="#">here</a> for Non-USC Opportunities Suitable for Ukrainian Scholars/Students</p> */}
+
+          {/* <h4 class="form-header" id="interest-form-link">TEST TEST</h4>
+          <Testing></Testing> */}
+
         </div>
 
         {/* ------------ CURRENT OPENINGS SECTION ------------ */}

@@ -44,8 +44,7 @@ function App() {
         
           <b>For USC Faculty:</b> If you'd like to add your resources or collaboration interests, please use <a href="https://docs.google.com/forms/d/e/1FAIpQLScsXK-KFfQnGe8jyvtR-CmS8L5YMyZ7VFKplx59SuyymKmeJA/viewform" target='_blank' rel="noreferrer">this form</a>.<br/><br/>
         
-          <i>This is a joint effort of USC faculty members with support and oversight by the Office of 
-          Strategic and Global Initiatives at USC. For additional information, you can contact our working group directly via <a href="mailto:ukraineassistance@usc.edu">ukraineassistance@usc.edu</a>.</i>
+          <i>This is an effort led by USC faculty members with support by various administrative units within the Office of the Provost.</i>
           </p>
         </div>
         

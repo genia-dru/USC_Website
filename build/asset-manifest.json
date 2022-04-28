@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.8f515e42.css",
-    "main.js": "/static/js/main.95628352.js",
+    "main.css": "/static/css/main.008700f9.css",
+    "main.js": "/static/js/main.0e0da50d.js",
     "static/js/787.202fbb43.chunk.js": "/static/js/787.202fbb43.chunk.js",
     "static/media/background-usc.jpeg": "/static/media/background-usc.b4f26bf8ed8ffc5f6c02.jpeg",
     "static/media/doctoral.png": "/static/media/doctoral.96da78b894f12ed178d9.png",
     "static/media/usc-logo.png": "/static/media/usc-logo.65d19c707308c46a5965.png",
     "index.html": "/index.html",
-    "main.8f515e42.css.map": "/static/css/main.8f515e42.css.map",
-    "main.95628352.js.map": "/static/js/main.95628352.js.map",
+    "main.008700f9.css.map": "/static/css/main.008700f9.css.map",
+    "main.0e0da50d.js.map": "/static/js/main.0e0da50d.js.map",
     "787.202fbb43.chunk.js.map": "/static/js/787.202fbb43.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f515e42.css",
-    "static/js/main.95628352.js"
+    "static/css/main.008700f9.css",
+    "static/js/main.0e0da50d.js"
   ]
 }

@@ -21,7 +21,7 @@ function App() {
       <body class="container-fluid p-0 m-0">
         
         {/* ------------ HEADER SECTION ------------ */}
-        <div class="heading-title pt-5 pb-3 bg-image d-flex align-items-center justify-content-center">
+        <div class="heading-title pt-5 pb-5 bg-image d-flex align-items-center justify-content-center">
           <div class="container-fluid">
             <h3 class="d-flex pb-0 mb-0 container-fluid justify-content-center"><b>USC Ukraine Assistance Hub</b></h3>
             <p class="d-flex pt-0 mt-0 container-fluid justify-content-center"><br/>

@@ -41,23 +41,25 @@ html {
   margin: -1rem -50vw;
   background: #900;
   width: 100vw;
-  height: 75px;
+  height: 115px;
 }
 .logo {
   position: absolute;
   float: right;
-  top: 25px;
+  top: 30px;
   right: 2%;
-  height: 40px;
+  height: 50px;
   width: auto;
+  padding-right: 10px;
 }
 .logo-mobile {
   position: absolute;
   float: right;
-  top: 25px;
+  top: 30px;
   right: 2%;
-  height: 40px;
+  height: 50px;
   width: auto;
+  padding-right: 10px;
 }
 h1{
   font-size: 40%;
@@ -80,6 +82,8 @@ h3{
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFCC00;
+  position: relative;
+  margin-top: 0px;
 }
 .heading-title p{
   color: #FFCC00;

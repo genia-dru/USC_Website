@@ -14,8 +14,8 @@ function App() {
     <div className="App">
       <header className="App-header container-fluid">      
       <div class="logo-wrapper static-top pt-0 pb-0">
-            <img src={logo_mobile} class="logo-mobile d-sm-none justify-content-right" alt="USC logo for mobile"/>
-            <img src={logo} class="logo d-none d-sm-block justify-content-right" alt="USC logo"/>     
+            <a href='https://www.usc.edu/' target='_blank' rel="noreferrer"><img src={logo_mobile} class="logo-mobile d-sm-none justify-content-right" alt="USC logo for mobile" /></a>
+            <a href='https://www.usc.edu/' target='_blank' rel="noreferrer"><img src={logo} class="logo d-none d-sm-block justify-content-right" alt="USC logo"/></a>     
       </div>
       </header>
       <body class="container-fluid p-0 m-0">
